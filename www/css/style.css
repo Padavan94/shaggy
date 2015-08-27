@@ -738,11 +738,37 @@ a.btn-mod:focus {
     border: 2px solid rgba(255, 255, 255, .75);
     background: transparent;
 }
+.my-local-btn{
+    text-align: center;
+}
+.my-local-btn .btn-mod.btn-border-w{
+    color: #000;
+    border: 1px solid rgba(0, 0, 0, .75);
+    background: transparent;
+}
+.my-local-btn .btn-mod.btn-border-w:hover{
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, .75);
+    background: #000;
+}
+.my-local-btn .btn-mod.btn-border-w
+.all-services .btn-mod.btn-border-w{
+    border-color: rgba(0, 0, 0, .75);
+    color: #000;
+}
+.all-services{
+    text-align: center;
+}
+.all-services .btn-mod.btn-border-w:hover{
+    background-color: #000;
+    color: #fff;
+    border-color: transparent;
+}
 
 .btn-mod.btn-border-w:hover,
 .btn-mod.btn-border-w:focus {
     color: #111;
-    border-color: transparent;
+    
     background: #fff;
 }
 
@@ -1561,6 +1587,7 @@ a.btn-mod:focus {
 }
 
 .nav-logo-wrap .logo {
+    padding-top: 6px;
     display: table-cell;
     vertical-align: middle;
     max-width: 118px;
@@ -2013,7 +2040,7 @@ a.logo:hover {
  */
 
 .main-nav.dark {
-    background-color: #3f3f3f;
+    background-color: #777;
 
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
@@ -2051,6 +2078,12 @@ a.logo:hover {
     text-transform: uppercase;
     text-decoration: none;
     color: rgba(255, 255, 255, .9);
+}
+.main-nav.dark .logo{
+    vertical-align: none;
+}
+.main-nav.dark .logo svg{
+    margin-top: 4px;
 }
 
 .main-nav.dark .mn-sub {
@@ -4388,6 +4421,16 @@ a.logo:hover {
     -ms-transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);
     transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);
 }
+.slider-socials .footer-social-links a,.slider-socials .footer-social-links i {
+    color: #fff;
+}
+.slider-socials .footer-social-links a:hover{
+    color: #000;
+}
+.slider-socials .footer-social-links a:before{
+    border-color: #fff;
+}
+
 
 .footer-social-links a i,
 .footer-social-links a span {
@@ -7307,7 +7350,7 @@ footer.page-section .footer-social-links {
     .cont-border form {padding:5px 10px 15px;}
         .cont-border form input {height:30px!important;}
         .cont-border form .btn-mod {font-size:12px;background:#66CCCC;}
-.blackbutton {margin:10px 0 2px 0;font-size:12px;background:#3f3f3f;color:#FFF;text-transform: uppercase; text-align: center; text-decoration:none; cursor:pointer;display:inline-block; padding:5px 10px 4px;line-height:16px;}
+.blackbutton {margin:10px 0 2px 0;font-size:12px;background:#777;color:#FFF;text-transform: uppercase; text-align: center; text-decoration:none; cursor:pointer;display:inline-block; padding:5px 10px 4px;line-height:16px;}
 .blackbutton img {vertical-align: top;}
 
 
