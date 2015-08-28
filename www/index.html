@@ -559,13 +559,26 @@
                                             <div class="form-group">
                                                 <select class="input-md form-control">
                                                     <option>Время</option>
-                                                    <option>от 09 до 10 часов</option>
-                                                    <option>от 10 до 11 часов</option>
-                                                    <option>от 12 до 13 часов</option>
-                                                    <option>от 13 до 14 часов</option>
-                                                    <option>от 15 до 16 часов</option>
-                                                    <option>от 16 до 17 часов</option>
-                                                    <option>от 18 до 19 часов</option>
+                                                    <option>10:00</option>
+                                                    <option>10:30</option>
+                                                    <option>11:00</option>
+                                                    <option>11:30</option>
+                                                    <option>12:00</option>
+                                                    <option>12:30</option>
+                                                    <option>13:00</option>
+                                                    <option>13:30</option>
+                                                    <option>14:00</option>
+                                                    <option>14:30</option>
+                                                    <option>15:00</option>
+                                                    <option>15:30</option>
+                                                    <option>16:00</option>
+                                                    <option>16:30</option>
+                                                    <option>17:00</option>
+                                                    <option>17:30</option>
+                                                    <option>18:30</option>
+                                                    <option>19:00</option>
+                                                    <option>19:30</option>
+                                                    <option>20:00</option>
                                                 </select>
                                             </div>
 
@@ -643,6 +656,23 @@
 
                             </div>
                             <!-- End Popup itself -->
+                            <!-- Popup itself -->
+                            <div class="my-modal-container  white-popup mfp-hide ">
+                                <h4>Контактные телефоны</h4>
+                                <div class="row">
+                                    <div class="left-phone col-xs-6 col-sm-6 col-md6 text-center">
+                                        <h5>ШАГГИ СТИЛЬ</h5>
+                                        <span><a href="tel:777-07-87">777-07-87</a></span>
+                                    </div>
+                                    <div class="right-phone col-xs-6 col-sm-6 col-md6 text-center">
+                                        <h5>ШАГГИ ТАЙМ</h5>
+                                        <span><a href="tel:777-0-99">777-0-99</a></span>,
+                                        <span><a href="tel:775-06-70">775-06-70</a></span>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!-- End Popup itself -->
             </section>
             <!-- End Shop Section -->
 
@@ -651,12 +681,12 @@
             <!-- End About Section -->
 
             <div class="local-scroll my-local-btn">
-                <a href="#" class="btn btn-mod btn-border-w btn-medium btn-round hidden-xs">Записаться онлайн</a>
+                <a href=".modal-container" class="btn btn-mod btn-border-w btn-medium btn-round hidden-xs open-modal">Записаться онлайн</a>
                 <span class="hidden-xs">&nbsp;</span>
-                <a href="#" class="btn btn-mod btn-border-w btn-medium btn-round">Позвонить сейчас</a>
+                <a href=".my-modal-container" class="btn btn-mod btn-border-w btn-medium btn-round open-modal">Позвонить сейчас</a>
             </div>
             <!-- Section -->
-            <section class="page-section">
+            <section class="page-section serv-sect">
                 <div class="container relative">
 
                     <h2 class="section-title font-alt mb-70 mb-sm-40">
@@ -925,7 +955,7 @@
                 <div class="relative">
 
                     <h2 class="section-title font-alt mb-70 mb-sm-40">
-                        Portfolio
+                        ПОРТФОЛИО
                     </h2>
 
                     
@@ -1048,7 +1078,7 @@
 
 
             <!-- Call Action Section -->
-            <section class="small-section bg-dark">
+            <section class="small-section all-services">
                 <div class="container relative">
 
                     <div class="align-center">
@@ -1554,7 +1584,7 @@
                                             Адрес
                                         </div>
                                         <div class="ci-text">
-                                            245 Quigley Blvd, Ste K
+                                            Канатная,81
                                         </div>
                                         <a href="tel:+3806300000000" class="blackbutton">
                                             <img src="/images/phone.png" alt=""/> позвонить прямо сейчас
@@ -1636,7 +1666,7 @@
                                             Адрес
                                         </div>
                                         <div class="ci-text">
-                                            245 Quigley Blvd, Ste K
+                                            Еврейская,10
                                         </div>
                                          <a href="tel:+3806300000000" class="blackbutton">
                                             <img src="/images/phone.png" alt=""/> позвонить прямо сейчас
@@ -1754,26 +1784,26 @@
                                                     });
                                                     var markerImg1 = {
                                                         url: '/images/mapmarki.png',
-                                                        anchor: new google.maps.Point(46.478271, 30.743917)
+                                                        anchor: new google.maps.Point(46.468953, 30.746616)
                                                     }
                                                     marker1 = new google.maps.Marker({
                                                         map: map,
                                                         title: 'Шагги Стиль',
                                                         icon: markerImg1,
-                                                        position: new google.maps.LatLng(46.478271, 30.743917),
+                                                        position: new google.maps.LatLng(46.468953, 30.746616),
                                                         animation: google.maps.Animation.DROP
 
                                                     });
 
                                                     var markerImg2 = {
                                                         url: '/images/mapmarki.png',
-                                                        anchor: new google.maps.Point(46.4669317, 30.7477635)
+                                                        anchor: new google.maps.Point(46.478452, 30.743917)
                                                     }
                                                     marker2 = new google.maps.Marker({
                                                         map: map,
                                                         title: 'Шагги Тайм',
                                                         icon: markerImg2,
-                                                        position: new google.maps.LatLng(46.4669317, 30.7477635),
+                                                        position: new google.maps.LatLng(46.478452, 30.743917),
                                                         animation: google.maps.Animation.DROP
 
                                                     });

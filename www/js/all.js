@@ -28,14 +28,14 @@
                         center: {lat: 46.478271, lng: 30.743917}
                     });
                     var markerImg10 = {
-                        url: '/images/logo-dark.png',
-                        anchor: new google.maps.Point(46.478271, 30.743917)
+                        url: '/images/mapmarki.png',
+                        anchor: new google.maps.Point(46.478452, 30.743917)
                     }
                     marker10 = new google.maps.Marker({
                         map: map2,
                         title: 'Шагги Стиль',
                         icon: markerImg10,
-                        position: new google.maps.LatLng(46.478271, 30.743917),
+                        position: new google.maps.LatLng(46.478452, 30.743917),
                         animation: google.maps.Animation.DROP
 
                     });
@@ -55,14 +55,14 @@
                         center: {lat: 46.4669317, lng: 30.7477635}
                     });
                     var markerImg20 = {
-                        url: '/images/logo-dark.png',
-                        anchor: new google.maps.Point(46.4669317, 30.7477635)
+                        url: '/images/mapmarki.png',
+                        anchor: new google.maps.Point(46.468953, 30.746616)
                     }
                     marker20 = new google.maps.Marker({
                         map: map3,
                         title: 'Шагги Тайм',
                         icon: markerImg20,
-                        position: new google.maps.LatLng(46.4669317, 30.7477635),
+                        position: new google.maps.LatLng(46.468953, 30.746616),
                         animation: google.maps.Animation.DROP
 
                     });
