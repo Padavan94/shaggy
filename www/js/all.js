@@ -93,6 +93,7 @@
 //IE:
             e.returnValue = false;
             e.cancelBubble = true;
+            //$(this).find
             $(this).parent('li').children('ul').slideToggle();
         });
 
@@ -998,7 +999,7 @@ function init_side_panel() {
                 sp_overlay.fadeIn();
             }, 100);
 
-            if ($(".owl-carousel").lenth) {
+            if ($(".owl-carousel").length) {
                 $(".owl-carousel").data("owlCarousel").stop();
             }
 
