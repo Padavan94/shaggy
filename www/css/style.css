@@ -1424,7 +1424,6 @@ a.btn-mod:focus {
     font-size: 30px;
     font-weight: 400;
     text-transform: uppercase;
-    letter-spacing: 0.5em;
     line-height: 1.2;
     opacity: .9;
     padding-top: 6px;
@@ -1457,7 +1456,6 @@ a.btn-mod:focus {
     font-weight: 400;
     line-height: 1.4;
     text-transform: uppercase;
-    letter-spacing: 0.7em;
 }
 
 .hs-line-15 {
@@ -2835,7 +2833,6 @@ a.logo:hover {
     font-weight: 400;
     text-transform: uppercase;
     text-align: center;
-    letter-spacing: 0.5em;
     line-height: 1.4;
 }
 .serv-sect .section-title {
@@ -4398,7 +4395,6 @@ a.logo:hover {
 .footer-copy {
     margin-bottom: 5px;
     text-transform: uppercase;
-    letter-spacing: 0.5em;
 }
 
 .footer-made {
@@ -7043,6 +7039,16 @@ footer.page-section .footer-social-links {
 .my-modal-container{
     max-width: 320px;
 }
+.my-modal-container h4{
+    text-align: center;
+}
+.my-modal-container h5{
+    display: inline-block;
+    background-color: #777;
+    padding: 5px;
+    color: #fff;
+
+}
 .my-modal-container .left-phone{
     border-right: 1px solid #111;
 }
@@ -7051,10 +7057,14 @@ footer.page-section .footer-social-links {
     text-transform: uppercase;
     cursor: pointer;
     text-decoration: none;
+    margin-bottom: 10px;
+    font-size: 16px;
 }
 .my-modal-container .left-phone a:hover,
 .my-modal-container .right-phone a:hover{
-    text-decoration: underline;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
 }
 .btn-black {
     background-color: #000000;
@@ -7129,7 +7139,7 @@ footer.page-section .footer-social-links {
 
 .categories-list .toggle > dt > a {
     border:none;
-    padding: 10px 0px;;
+    padding: 10px 15px 10px 0;
 }
 .categories-list .toggle > dt {
     letter-spacing: 0.1em;
@@ -7398,4 +7408,30 @@ footer.page-section .footer-social-links {
 /*fix by Padavan*/
 .mt-40 .text-center:first-child{
     border-right: 1px solid black;
+}
+.mfp-image-holder .mfp-close, .mfp-iframe-holder .mfp-close{
+    right: -29px !important;
+    top: 6px;
+    position: absolute;
+}
+#salons-index{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+#portfolio,#shares{
+    padding-top: 0;
+}
+textarea.form-control{
+    height: 131px;
+    resize: none
+}
+
+/*style photos*/
+#lightgallery,#lightgallery2,#lightgallery3,#lightgallery4,#lightgallery5,#lightgallery6,#lightgallery7{
+    text-align: center;
+}
+#lightgallery img,#lightgallery2 img,#lightgallery3 img,#lightgallery4 img,#lightgallery5 img,#lightgallery6 img,#lightgallery7 img{
+    margin: 4px;
+    width: 32%;
+    display: inline-block;
 }

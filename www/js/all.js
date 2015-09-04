@@ -4,10 +4,28 @@
 
     $(document).ready(function () {
         forSVG();
+
+        //my galleryes
+        $("#lightgallery,#lightgallery2,#lightgallery3, #lightgallery4, #lightgallery5,#lightgallery6,#lightgallery7").lightGallery({
+            download: false
+        });
+        
+         //end galleryes
+
         $('.formopen').click(function () {
             $(this).parent('div').find('.hidden-form').slideToggle('slow');
         });
-
+        //padavan fixs 9.04
+        $("#zap1").click(function() {
+            $("#my-select option:nth-child(2)").attr("selected", "selected");
+        });
+        $("#zap2").click(function() {
+            $("#my-select option:nth-child(3)").attr("selected", "selected");
+        });
+        $("#zap").click(function() {
+            $("#my-select option:first-child").attr("selected", "selected");
+        });
+        
 
         $('.youtube-popup').magnificPopup({
             disableOn: 700,
@@ -88,15 +106,19 @@
         });
 
         $('.group-header').click(function (e) {
+            var self = $(this);
+
             e.preventDefault();
             e.stopPropagation();
 //IE:
             e.returnValue = false;
             e.cancelBubble = true;
-            //$(this).find
-            $(this).parent('li').children('ul').slideToggle();
+            self.parent('li').children('ul').slideToggle();
+            self.each( function(index, val) {
+                 $('.group-header').parent('li').children('ul').not(self.parent('li').children('ul')).slideUp();
+            });
+            
         });
-
         $('.mn-has-sub').mouseleave(function (e) {
             $('.menu-hidden1 li ul, .menu-hidden2 li ul').slideUp();
         });
@@ -151,12 +173,12 @@ function forSVG(){
         $(window).trigger("resize");
 
         // Hash menu forwarding
-        if (window.location.hash) {
+       /* if (window.location.hash) {
             var hash_offset = $(window.location.hash).offset().top;
             $("html, body").animate({
                 scrollTop: hash_offset
             });
-        }
+        }*/
 
     });
 
@@ -417,7 +439,7 @@ function forSVG(){
         $(".local-scroll").localScroll({
             target: "body",
             duration: 1500,
-            offset: 0,
+            offset: -50,
             easing: "easeInOutExpo"
         });
 
@@ -439,6 +461,7 @@ function forSVG(){
 
 
 
+
     /* ---------------------------------------------
      Lightboxes
      --------------------------------------------- */
@@ -448,7 +471,8 @@ function forSVG(){
         // Works Item Lightbox				
         $(".work-lightbox-link").magnificPopup({
             gallery: {
-                enabled: true
+                enabled: true,
+                enableTouch: true
             },
             mainClass: "mfp-fade"
         });
@@ -456,19 +480,22 @@ function forSVG(){
         // Works Item Lightbox	
         $(".lightbox-gallery-1").magnificPopup({
             gallery: {
-                enabled: true
+                enabled: true,
+                enableTouch: true
             }
         });
 
         // Other Custom Lightbox
         $(".lightbox-gallery-2").magnificPopup({
             gallery: {
-                enabled: true
+                enabled: true,
+                enableTouch: true
             }
         });
         $(".lightbox-gallery-3").magnificPopup({
             gallery: {
-                enabled: true
+                enabled: true,
+                enableTouch: true
             }
         });
         $(".lightbox").magnificPopup();

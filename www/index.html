@@ -25,12 +25,131 @@
         <link rel="stylesheet" href="css/owl.carousel.css">
         <link rel="stylesheet" href="css/magnific-popup.css">
         <link rel="stylesheet" href="css/rev-slider.css">
+        <link rel="stylesheet" href="css/lightgallery.css">
         <link rel="stylesheet" href="rs-plugin/css/settings.css" media="screen"/>
+        <link rel="stylesheet" href="css/hovers.css" media="screen"/>
         <link rel="stylesheet" href="css/jquery.datepicker.css">
+
 
         <!-- Jquery -->
         <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+<style type="text/css">
+            .demo-gallery > ul {
+              margin-bottom: 0;
+            }
+            .demo-gallery > ul > li {
+                float: left;
+                margin-bottom: 15px;
+                margin-right: 20px;
+                width: 200px;
+            }
+            .demo-gallery > ul > li a {
+              border: 3px solid #FFF;
+              border-radius: 3px;
+              display: block;
+              overflow: hidden;
+              position: relative;
+              float: left;
+            }
+            .demo-gallery > ul > li a > img {
+              -webkit-transition: -webkit-transform 0.15s ease 0s;
+              -moz-transition: -moz-transform 0.15s ease 0s;
+              -o-transition: -o-transform 0.15s ease 0s;
+              transition: transform 0.15s ease 0s;
+              -webkit-transform: scale3d(1, 1, 1);
+              transform: scale3d(1, 1, 1);
+              height: 100%;
+              width: 100%;
+            }
+            .demo-gallery > ul > li a:hover > img {
+              -webkit-transform: scale3d(1.1, 1.1, 1.1);
+              transform: scale3d(1.1, 1.1, 1.1);
+            }
+            .demo-gallery > ul > li a:hover .demo-gallery-poster > img {
+              opacity: 1;
+            }
+            .demo-gallery > ul > li a .demo-gallery-poster {
+              background-color: rgba(0, 0, 0, 0.1);
+              bottom: 0;
+              left: 0;
+              position: absolute;
+              right: 0;
+              top: 0;
+              -webkit-transition: background-color 0.15s ease 0s;
+              -o-transition: background-color 0.15s ease 0s;
+              transition: background-color 0.15s ease 0s;
+            }
+            .demo-gallery > ul > li a .demo-gallery-poster > img {
+              left: 50%;
+              margin-left: -10px;
+              margin-top: -10px;
+              opacity: 0;
+              position: absolute;
+              top: 50%;
+              -webkit-transition: opacity 0.3s ease 0s;
+              -o-transition: opacity 0.3s ease 0s;
+              transition: opacity 0.3s ease 0s;
+            }
+            .demo-gallery > ul > li a:hover .demo-gallery-poster {
+              background-color: rgba(0, 0, 0, 0.5);
+            }
+            .demo-gallery .justified-gallery > a > img {
+              -webkit-transition: -webkit-transform 0.15s ease 0s;
+              -moz-transition: -moz-transform 0.15s ease 0s;
+              -o-transition: -o-transform 0.15s ease 0s;
+              transition: transform 0.15s ease 0s;
+              -webkit-transform: scale3d(1, 1, 1);
+              transform: scale3d(1, 1, 1);
+              height: 100%;
+              width: 100%;
+            }
+            .demo-gallery .justified-gallery > a:hover > img {
+              -webkit-transform: scale3d(1.1, 1.1, 1.1);
+              transform: scale3d(1.1, 1.1, 1.1);
+            }
+            .demo-gallery .justified-gallery > a:hover .demo-gallery-poster > img {
+              opacity: 1;
+            }
+            .demo-gallery .justified-gallery > a .demo-gallery-poster {
+              background-color: rgba(0, 0, 0, 0.1);
+              bottom: 0;
+              left: 0;
+              position: absolute;
+              right: 0;
+              top: 0;
+              -webkit-transition: background-color 0.15s ease 0s;
+              -o-transition: background-color 0.15s ease 0s;
+              transition: background-color 0.15s ease 0s;
+            }
+            .demo-gallery .justified-gallery > a .demo-gallery-poster > img {
+              left: 50%;
+              margin-left: -10px;
+              margin-top: -10px;
+              opacity: 0;
+              position: absolute;
+              top: 50%;
+              -webkit-transition: opacity 0.3s ease 0s;
+              -o-transition: opacity 0.3s ease 0s;
+              transition: opacity 0.3s ease 0s;
+            }
+            .demo-gallery .justified-gallery > a:hover .demo-gallery-poster {
+              background-color: rgba(0, 0, 0, 0.5);
+            }
+            .demo-gallery .video .demo-gallery-poster img {
+              height: 48px;
+              margin-left: -24px;
+              margin-top: -24px;
+              opacity: 0.8;
+              width: 48px;
+            }
+            .demo-gallery.dark > ul > li a {
+              border: 3px solid #04070a;
+            }
+            .home .demo-gallery {
+              padding-bottom: 80px;
+            }
+        </style>
     </head>
     <body class="appear-animate">
 
@@ -109,13 +228,23 @@
                                 <h1 class="hs-line-8 no-transp font-alt mb-50 mb-xs-30">
                                     
                                 </h1>
-
+                                
                                 <div class="local-scroll">
                                     <a href="/shaggy_time.html" class="btn btn-mod btn-border-w btn-medium btn-round hidden-xs">Шагги Тайм</a>
                                     <span class="hidden-xs">&nbsp;</span>
                                     <a href="/shaggy_style.html" class="btn btn-mod btn-border-w btn-medium btn-round">Шагги Стиль</a>
                                 </div>
-
+                                <div class="row">
+                                    <div class="col-xs-12 text-center slider-socials">
+                                        <div id="about-social" class="footer-social-links">
+                                            <a href="#" title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a>
+                                            <a href="#" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a>
+                                            <a href="#" title="Behance" target="_blank"><i class="fa fa-behance"></i></a>
+                                            <a href="#" title="LinkedIn+" target="_blank"><i class="fa fa-linkedin"></i></a>
+                                            <a href="#" title="Pinterest" target="_blank"><i class="fa fa-pinterest"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <!-- End Hero Content -->
@@ -440,7 +569,7 @@
                     <!-- Toggle -->
                     <dl class="toggle mb-60">
                         <dt class="text-center">
-                        <a href="#"><h4>С любовью...</h4></a>
+                        <a href="#"><h4>Подробнее...</h4></a>
                         </dt>
                         <dd>
                             <blockquote>
@@ -469,12 +598,13 @@
                                     Louis Kahn
                                 </footer>
                             </blockquote>
-
+                            <!--
                             <div class="align-center">
                                 <div class="local-scroll mb-20">
                                     <a href="pages-about-2.html" class="btn btn-mod btn-large btn-round mb-xs-10">Подробнее</a>
                                 </div>
                             </div>
+                            -->
                         </dd>
                     </dl>
                     <!-- End Toggle -->
@@ -488,7 +618,7 @@
             <section class="page-section" id="salons-index">
                 <div class="container relative">
 
-                    <h2 class="section-title font-alt align-left mb-70 mb-sm-40">
+                    <h2 class="section-title font-alt mb-70 mb-sm-40">
                         Наши салоны
                     </h2>
 
@@ -497,11 +627,11 @@
                         <!-- Shop Item -->
                         <div class="col-md-6 col-lg-6 mb-60 mb-xs-40 wow fadeIn" data-wow-delay="0.1s" data-wow-duration="2s">
                             <div class="post-prev-img">
-                                <a href="#"><img src="images/tmp/salon-1.jpg" alt=""/></a>
+                                <a href="shaggy_time.html"><img src="images/tmp/salon-1.jpg" alt=""/></a>
                             </div>
                             <div class="post-prev-title font-alt align-center">
                                 <a href="#">Шагги тайм</a><br/>
-                                <a href=".modal-container" class="label bg-dark label-brand get_saloon_popup open-modal">Посетить салон</a>
+                                <a id="zap1" href=".modal-container" class="label bg-dark label-brand get_saloon_popup open-modal">Посетить салон</a>
                             </div>
                         </div>
                         <!-- End Shop Item -->
@@ -509,11 +639,11 @@
                         <!-- Shop Item -->
                         <div class="col-md-6 col-lg-6 mb-60 mb-xs-40 wow fadeIn" data-wow-delay="0.4s" data-wow-duration="2s">
                             <div class="post-prev-img">
-                                <a href="#"><img src="images/tmp/salon-2.jpg" alt=""/></a>
+                                <a href="shaggy_style.html"><img src="images/tmp/salon-2.jpg" alt=""/></a>
                             </div>
                             <div class="post-prev-title font-alt align-center">
                                 <a href="#">Шагги стиль</a><br/>
-                                <a href=".modal-container" class=" label bg-dark label-brand get_saloon_popup open-modal">Посетить салон</a>
+                                <a id="zap2" href=".modal-container" class=" label bg-dark label-brand get_saloon_popup open-modal">Посетить салон</a>
                             </div>
                         </div>
                         <!-- End Shop Item -->
@@ -522,7 +652,7 @@
 
                 </div>
                  <!-- Popup itself -->
-                            <div class="modal-container white-popup mfp-hide">
+                            <div id="" class="modal-container white-popup mfp-hide">
                                 <h4>ЗАПИСАТЬСЯ ОНЛАЙН</h4>
 
                                 <form class="form contact-form" id="contact_form">
@@ -591,7 +721,7 @@
 
                                             <!-- Service -->
                                             <div class="form-group">
-                                                <select class="input-md form-control">
+                                                <select id="my-select" class="input-md form-control">
                                                     <option>Выбрать салон</option>
                                                     <option>Шагги тайм</option>
                                                     <option>Шагги стиль</option>
@@ -662,12 +792,12 @@
                                 <div class="row">
                                     <div class="left-phone col-xs-6 col-sm-6 col-md6 text-center">
                                         <h5>ШАГГИ СТИЛЬ</h5>
-                                        <span><a href="tel:777-07-87">777-07-87</a></span>
+                                        <span><a class="my-hover" href="tel:777-07-87">777-07-87</a></span>
                                     </div>
                                     <div class="right-phone col-xs-6 col-sm-6 col-md6 text-center">
                                         <h5>ШАГГИ ТАЙМ</h5>
-                                        <span><a href="tel:777-0-99">777-0-99</a></span>,
-                                        <span><a href="tel:775-06-70">775-06-70</a></span>
+                                        <span><a class="my-hover" href="tel:777-0-99">777-0-99</a></span><br>
+                                        <span><a class="my-hover" href="tel:775-06-70">775-06-70</a></span>
                                     </div>
                                 </div>
 
@@ -681,7 +811,7 @@
             <!-- End About Section -->
 
             <div class="local-scroll my-local-btn">
-                <a href=".modal-container" class="btn btn-mod btn-border-w btn-medium btn-round hidden-xs open-modal">Записаться онлайн</a>
+                <a id="zap" href=".modal-container" class="btn btn-mod btn-border-w btn-medium btn-round hidden-xs open-modal">Записаться онлайн</a>
                 <span class="hidden-xs">&nbsp;</span>
                 <a href=".my-modal-container" class="btn btn-mod btn-border-w btn-medium btn-round open-modal">Позвонить сейчас</a>
             </div>
@@ -944,7 +1074,7 @@
 
                 </div>
                 <div class="local-scroll all-services mb-20">
-                    <a class="btn btn-mod btn-border-w btn-round btn-large mb-20" href="pages-gallery-3col.html">Все услуги</a>&nbsp;&nbsp;
+                    <a class="btn btn-mod btn-border-w btn-round btn-large mb-20" href="pages-services-2.html">Все услуги</a>&nbsp;&nbsp;
                 </div>
             </section>
             <!-- End Section -->
@@ -952,126 +1082,40 @@
 
             <!-- Portfolio Section -->
             <section class="page-section pb-0" id="portfolio">
-                <div class="relative">
-
-                    <h2 class="section-title font-alt mb-70 mb-sm-40">
-                        ПОРТФОЛИО
+                <div class="container">
+                    <h2 class="section-title font-alt align-left mb-70 mb-sm-40">
+                        Портфолио
                     </h2>
-
-                    
-
-                    <!-- Works Filter 
-                    <div class="works-filter font-alt align-center">
-                        <a href="#" class="filter active" data-filter=".hairstyle">Стрижки</a>
-                        <a href="#" class="filter" data-filter=".tatoo">Татуаж</a>
-                        <a href="#" class="filter" data-filter=".visage">Визаж</a>
-                        <a href="#" class="filter" data-filter=".evening-hairstyle">Вечерние прически</a>
-                    </div>
-                     End Works Filter -->
-
-
-                    <!-- Works Grid -->
-                    <ul class="works-grid work-grid-3 work-grid-gut clearfix font-alt hover-white hide-titles" id="work-grid">
-
-                        <!-- Work Item (Lightbox) -->
-                        <li class="work-item mix evening-hairstyle">
-                            <a href="images/portfolio/full-project-1.jpg" class="work-lightbox-link mfp-image">
-                                <div class="work-img">
-                                    <img src="images/portfolio/projects-1.jpg" alt="Work" />
-                                </div>
-                                <div class="work-intro">
-                                    <h3 class="work-title">Portrait</h3>
-                                    <div class="work-descr">
-                                        Lightbox
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <!-- End Work Item -->
-
-                        <!-- Work Item (Lightbox) -->
-                        <li class="work-item mix evening-hairstyle">
-                            <a href="images/portfolio/full-project-1.jpg" class="work-lightbox-link mfp-image">
-                                <div class="work-img">
-                                    <img src="images/portfolio/projects-1.jpg" alt="Work" />
-                                </div>
-                                <div class="work-intro">
-                                    <h3 class="work-title">Portrait</h3>
-                                    <div class="work-descr">
-                                        Lightbox
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <!-- End Work Item -->
-
-                        <!-- Work Item (Lightbox) -->
-                        <li class="work-item mix evening-hairstyle">
-                            <a href="images/portfolio/full-project-1.jpg" class="work-lightbox-link mfp-image">
-                                <div class="work-img">
-                                    <img src="images/portfolio/projects-1.jpg" alt="Work" />
-                                </div>
-                                <div class="work-intro">
-                                    <h3 class="work-title">Portrait</h3>
-                                    <div class="work-descr">
-                                        Lightbox
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <!-- End Work Item -->
-
-                        <!-- Work Item (Lightbox) -->
-                        <li class="work-item mix evening-hairstyle">
-                            <a href="images/portfolio/full-project-1.jpg" class="work-lightbox-link mfp-image">
-                                <div class="work-img">
-                                    <img src="images/portfolio/projects-1.jpg" alt="Work" />
-                                </div>
-                                <div class="work-intro">
-                                    <h3 class="work-title">Portrait</h3>
-                                    <div class="work-descr">
-                                        Lightbox
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <!-- End Work Item -->
-
-                        <!-- Work Item (Lightbox) -->
-                        <li class="work-item mix evening-hairstyle">
-                            <a href="images/portfolio/full-project-1.jpg" class="work-lightbox-link mfp-image">
-                                <div class="work-img">
-                                    <img src="images/portfolio/projects-1.jpg" alt="Work" />
-                                </div>
-                                <div class="work-intro">
-                                    <h3 class="work-title">Portrait</h3>
-                                    <div class="work-descr">
-                                        Lightbox
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <!-- End Work Item -->
-
-                        <!-- Work Item (Lightbox) -->
-                        <li class="work-item mix evening-hairstyle">
-                            <a href="images/portfolio/full-project-1.jpg" class="work-lightbox-link mfp-image">
-                                <div class="work-img">
-                                    <img src="images/portfolio/projects-1.jpg" alt="Work" />
-                                </div>
-                                <div class="work-intro">
-                                    <h3 class="work-title">Portrait</h3>
-                                    <div class="work-descr">
-                                        Lightbox
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <!-- End Work Item -->
-
-                        </ul>
-                        <!-- End Works Grid -->
-
+                    <div id="lightgallery">
+                  <a href="images/blog/post-prev-1.jpg">
+                      <img src="images/blog/post-prev-1.jpg" />
+                  </a>
+                  <a href="images/blog/post-prev-1.jpg">
+                      <img src="images/blog/post-prev-1.jpg" />
+                  </a>
+                  <a href="images/blog/post-prev-1.jpg">
+                      <img src="images/blog/post-prev-1.jpg" />
+                  </a>
+                  <a href="images/blog/post-prev-1.jpg">
+                      <img src="images/blog/post-prev-1.jpg" />
+                  </a>
+                  <a href="images/blog/post-prev-1.jpg">
+                      <img src="images/blog/post-prev-1.jpg" />
+                  </a>
+                  <a href="images/blog/post-prev-1.jpg">
+                      <img src="images/blog/post-prev-1.jpg" />
+                  </a>
+                  <a href="images/blog/post-prev-1.jpg">
+                      <img src="images/blog/post-prev-1.jpg" />
+                  </a>
+                  <a href="images/blog/post-prev-1.jpg">
+                      <img src="images/blog/post-prev-1.jpg" />
+                  </a>
+                  <a href="images/blog/post-prev-1.jpg">
+                      <img src="images/blog/post-prev-1.jpg" />
+                  </a>
+                  
+                </div>
                 </div>
             </section>
             <!-- End Portfolio Section -->
@@ -1252,8 +1296,6 @@
 
                     <h2 class="section-title font-alt align-left mb-70 mb-sm-40">
                         Акции
-                        <a href="blog-masonry-3col.html" class="section-more right">Все акции <i
-                                class="fa fa-angle-right"></i></a>
                     </h2>
 
                     <div class="row multi-columns-row">
@@ -1783,26 +1825,30 @@
                                                         center: {lat: 46.4730433, lng: 30.7495297}
                                                     });
                                                     var markerImg1 = {
-                                                        url: '/images/mapmarki.png',
+                                                        url: '/images/logo-loc.svg',
                                                         anchor: new google.maps.Point(46.468953, 30.746616)
                                                     }
                                                     marker1 = new google.maps.Marker({
                                                         map: map,
                                                         title: 'Шагги Стиль',
-                                                        icon: markerImg1,
+                                                        icon: new google.maps.MarkerImage('/images/logo-loc.svg',
+                                                            null, null, null, new google.maps.Size(100,100)),
+                                                            draggable: false,
                                                         position: new google.maps.LatLng(46.468953, 30.746616),
                                                         animation: google.maps.Animation.DROP
 
                                                     });
 
                                                     var markerImg2 = {
-                                                        url: '/images/mapmarki.png',
+                                                        url: '/images/logo-loc.svg',
                                                         anchor: new google.maps.Point(46.478452, 30.743917)
                                                     }
                                                     marker2 = new google.maps.Marker({
                                                         map: map,
                                                         title: 'Шагги Тайм',
-                                                        icon: markerImg2,
+                                                        icon: new google.maps.MarkerImage('/images/logo-loc.svg',
+                                                            null, null, null, new google.maps.Size(100,100)),
+                                                            draggable: false,
                                                         position: new google.maps.LatLng(46.478452, 30.743917),
                                                         animation: google.maps.Animation.DROP
 
@@ -1907,13 +1953,22 @@
         <script type="text/javascript" src="js/wow.min.js"></script>
         <script type="text/javascript" src="js/masonry.pkgd.min.js"></script>
         <script type="text/javascript" src="js/jquery.simple-text-rotator.min.js"></script>
-        <script type="text/javascript" src="js/all.js"></script>
         <script type="text/javascript" src="js/contact-form.js"></script>
         <script type="text/javascript" src="js/jquery.ajaxchimp.min.js"></script>
         <script type="text/javascript" src="rs-plugin/js/jquery.themepunch.tools.min.js"></script>
         <script type="text/javascript" src="rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
         <script type="text/javascript" src="js/rev-slider.js"></script>
         <script src="js/jquery.datepicker.min.js"></script>
+        
+        <script src="js/light/lightgallery.min.js"></script>
+        <script src="js/light/lg-fullscreen.min.js"></script>
+        <script src="js/light/lg-thumbnail.min.js"></script>
+        <script src="js/light/lg-autoplay.min.js"></script>
+        <script src="js/light/lg-hash.min.js"></script>
+        <script src="js/light/lg-zoom.min.js"></script>
+        <script src="js/light/lg-pager.min.js"></script>
+        <script src="js/light/lg-video.min.js"></script>
+        <script type="text/javascript" src="js/all.js"></script>
         <!--[if lt IE 10]>
         <script type="text/javascript" src="js/placeholder.js"></script><![endif]-->
         <script>
