@@ -5,9 +5,20 @@
     $(document).ready(function () {
         forSVG();
 
+
+        $(".categories-list .toggle dt a").click(function() {
+            var self = $(this);
+             self.parent().parent().parent().find('dd ul').each(function(index, el) {
+                
+             });
+         }); 
+
+
+
         //my galleryes
         $("#lightgallery,#lightgallery2,#lightgallery3, #lightgallery4, #lightgallery5,#lightgallery6,#lightgallery7").lightGallery({
-            download: false
+            download: false,
+             animateThumb: false
         });
         
          //end galleryes
@@ -52,7 +63,9 @@
                     marker10 = new google.maps.Marker({
                         map: map2,
                         title: 'Шагги Стиль',
-                        icon: markerImg10,
+                        icon: new google.maps.MarkerImage('/images/logo-loc.svg',
+                        null, null, null, new google.maps.Size(100,100)),
+                        draggable: false,
                         position: new google.maps.LatLng(46.478452, 30.743917),
                         animation: google.maps.Animation.DROP
 
@@ -72,14 +85,13 @@
                         zoom: 14,
                         center: {lat: 46.4669317, lng: 30.7477635}
                     });
-                    var markerImg20 = {
-                        url: '/images/mapmarki.png',
-                        anchor: new google.maps.Point(46.468953, 30.746616)
-                    }
+                    
                     marker20 = new google.maps.Marker({
                         map: map3,
                         title: 'Шагги Тайм',
-                        icon: markerImg20,
+                        icon: new google.maps.MarkerImage('/images/logo-loc.svg',
+                        null, null, null, new google.maps.Size(100,100)),
+                        draggable: false,
                         position: new google.maps.LatLng(46.468953, 30.746616),
                         animation: google.maps.Animation.DROP
 
@@ -88,6 +100,7 @@
                 }
             }
         });
+
 
         $('.menu-salon1').mouseenter(function () {
             $('.menu-hidden1').slideDown();
@@ -104,7 +117,6 @@
         $('.mn-has-sub').hover(function () {
             $('.menu-hidden1, .menu-hidden2').hide();
         });
-
         $('.group-header').click(function (e) {
             var self = $(this);
 
@@ -119,9 +131,7 @@
             });
             
         });
-        $('.mn-has-sub').mouseleave(function (e) {
-            $('.menu-hidden1 li ul, .menu-hidden2 li ul').slideUp();
-        });
+        
     });
 
 
@@ -1189,9 +1199,6 @@ function init_map() {
                 action: "init",
                 marker: {
                     address: gmMarkerAddress,
-                    options: {
-                        icon: "images/map-marker.png"
-                    }
                 },
                 map: {
                     options: {
@@ -1251,3 +1258,8 @@ function init_masonry() {
     })(jQuery);
 }
 
+/* ---------------------------------------------
+ fix toogle nav
+ --------------------------------------------- */
+
+ 

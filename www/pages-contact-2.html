@@ -352,27 +352,24 @@
                                                         zoom: 14,
                                                         center: {lat: 46.4730433, lng: 30.7495297}
                                                     });
-                                                    var markerImg1 = {
-                                                        url: '/images/mapmarki.png',
-                                                        anchor: new google.maps.Point(46.468953, 30.746616)
-                                                    }
+                                                   
                                                     marker1 = new google.maps.Marker({
                                                         map: map,
                                                         title: 'Шагги Стиль',
-                                                        icon: markerImg1,
+                                                        icon: new google.maps.MarkerImage('/images/logo-loc.svg',
+                                                            null, null, null, new google.maps.Size(100,100)),
+                                                            draggable: false,
                                                         position: new google.maps.LatLng(46.468953, 30.746616),
                                                         animation: google.maps.Animation.DROP
 
                                                     });
 
-                                                    var markerImg2 = {
-                                                        url: '/images/mapmarki.png',
-                                                        anchor: new google.maps.Point(46.478452, 30.743917)
-                                                    }
                                                     marker2 = new google.maps.Marker({
                                                         map: map,
                                                         title: 'Шагги Тайм',
-                                                        icon: markerImg2,
+                                                        icon: new google.maps.MarkerImage('/images/logo-loc.svg',
+                                                            null, null, null, new google.maps.Size(100,100)),
+                                                            draggable: false,
                                                         position: new google.maps.LatLng(46.478452, 30.743917),
                                                         animation: google.maps.Animation.DROP
 
@@ -380,6 +377,7 @@
                                                 }
                                                 google.maps.event.addDomListener(window, 'load', initialize);
                 </script>
+
 
                 <div class="map-canvas" id="map-canvas"></div>
 

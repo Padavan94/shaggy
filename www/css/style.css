@@ -6943,17 +6943,32 @@ footer.page-section .footer-social-links {
 .phone-number-item .mn-sub {
 
 }
+.phone-number-item ul li{
+    text-align: center;
+}
+.phone-number-item ul li:first-child{
+    border-bottom: 1px solid rgba(255, 255, 255, .7) !important;
+    padding-bottom: 5px !important;
+}
 
 .mn-sub.phone-number-container  {
     width: 180px !important;
     margin-left: -160px !important;
+    padding: 5px;
+}
+.phone-number-container span{
+    color: rgba(255, 255, 255, .7) !important;
+    text-align: center !important;
+    font-size: 15px !important;
+    margin-top: 10px;
+    display: inline-block;
 }
 
 .mn-sub.phone-number-container a {
     color: #fff !important;
     font-size: 17px !important;
-    text-align: center;
-    padding: 15px !important;
+    padding: 7px !important;
+    text-align: center !important;
 }
 
 .mn-sub.choice-lang {
@@ -7065,6 +7080,9 @@ footer.page-section .footer-social-links {
     text-decoration: none;
     color: #000;
     font-weight: bold;
+}
+.my-modal-container i{
+    margin-right: 5px;
 }
 .btn-black {
     background-color: #000000;
@@ -7381,11 +7399,23 @@ footer.page-section .footer-social-links {
     .cont-border form {padding:5px 10px 15px;}
         .cont-border form input {height:30px!important;}
         .cont-border form .btn-mod {font-size:12px;background:#66CCCC;}
-.blackbutton {margin:10px 0 2px 0;font-size:12px;background:#777;color:#FFF;text-transform: uppercase; text-align: center; text-decoration:none; cursor:pointer;display:inline-block; padding:5px 10px 4px;line-height:16px;}
-.blackbutton img {vertical-align: top;}
+.blackbutton {margin:10px 0 2px 0;font-size:12px;background:transparent;color:#111;text-transform: uppercase; text-align: center; text-decoration:none; cursor:pointer;display:inline-block; padding:5px 10px 4px;line-height:16px;border: 2px solid #111;    -webkit-transition: all 0.2s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    -moz-transition: all 0.2s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    -o-transition: all 0.2s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    -ms-transition: all 0.2s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    transition: all 0.2s cubic-bezier(0.000, 0.000, 0.580, 1.000);    -webkit-transition: all 0.2s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    -moz-transition: all 0.2s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    -o-transition: all 0.2s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    -ms-transition: all 0.2s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    transition: all 0.2s cubic-bezier(0.000, 0.000, 0.580, 1.000);}
+.blackbutton:visited, .blackbutton:focus{
+    color: inherit;
+    text-decoration: none;
+}
 .blackbutton:hover{
     color: #fff;
-    text-decoration: underline;
+    background-color: #111;
+    text-decoration: none;
 }
 
 .form-control {padding:4px 12px;}
@@ -7393,6 +7423,7 @@ footer.page-section .footer-social-links {
 .action_img {padding-left:0;}
 
 .return_back {font-size:14px;color:#FFF;background:#66CCCC;padding:5px 10px;display:block;width:100%;text-align: center; text-decoration: none;}
+.return_back img{margin-right: 10px; width: 23px;}
 .return_back:hover {color:#FFF;background:#000; text-decoration: none;}
 
 .post-action-index {color:#FFF;text-transform: uppercase; font-size:14px;text-align: center;}
@@ -7418,9 +7449,7 @@ footer.page-section .footer-social-links {
     padding-top: 0;
     padding-bottom: 0;
 }
-#portfolio,#shares{
-    padding-top: 0;
-}
+
 textarea.form-control{
     height: 131px;
     resize: none
@@ -7434,4 +7463,31 @@ textarea.form-control{
     margin: 4px;
     width: 32%;
     display: inline-block;
+}
+
+.submit_btn {
+    width: 100%;
+}
+
+.lg-outer .lg-thumb-outer.lg-grab .lg-thumb-item, .lg-outer .lg-thumb-item{
+    display: inline-block !important;
+    float: none !important;
+}
+.lg-outer .lg-thumb{
+    text-align: center !important;
+    width: 100% !important;
+}
+.saloon-links{
+    text-align: left;
+}
+.saloon-links a{
+    font-size: 20px !important; 
+}
+.saloon-links .active-my{
+    color: #fff !important;
+    border: 1px solid rgba(255, 255, 255, .75) !important;
+    background: #000 !important;
+}
+.mfp-close-btn-in .mfp-close{
+    top: 17px !important;
 }
