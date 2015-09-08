@@ -4821,7 +4821,7 @@ a.blog-item-more:hover {
  * Sidebar
  */
 
-.sidebar {
+.sidebar1{
     margin-top: 10px;
 }
 
@@ -7490,4 +7490,26 @@ textarea.form-control{
 }
 .mfp-close-btn-in .mfp-close{
     top: 17px !important;
+}
+
+/*sidebar easy fix*/
+
+.sidebar1 .sidebar{
+    width: 100%;
+}
+.sidebar1 .sidebar a:hover,.sidebar1 .sidebar a{
+    text-decoration: none;
+}
+.sidebar a:hover,.sidebar a{
+    text-decoration: none !important;
+}
+.serv-btn{
+    width: 100%;
+    margin-top: 30px;
+}
+.sidebar-nav-item{
+    padding-left: 0 !important;
+}
+.menu-hid ul>li{
+    padding-left: 8px !important;
 }

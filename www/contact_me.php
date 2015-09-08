@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 if($_POST)
 {
 	$to_Email   	= "support@bestlooker.pro"; //Replace with recipient email address
