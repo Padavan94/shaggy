@@ -8,9 +8,11 @@
 
         $(".categories-list .toggle dt a").click(function() {
             var self = $(this);
-             self.parent().parent().parent().find('dd ul').each(function(index, el) {
+            $(".categories-list .toggle dd ul").each( function(index, val) {
+            var self2 =  $(this).not(self.parent().parent().find("dd ul")); 
+            self2.slideUp("slow");
                 
-             });
+            });
          }); 
 
 
@@ -18,7 +20,7 @@
         //my galleryes
         $("#lightgallery,#lightgallery2,#lightgallery3, #lightgallery4, #lightgallery5,#lightgallery6,#lightgallery7").lightGallery({
             download: false,
-             animateThumb: false
+            animateThumb: false
         });
         
          //end galleryes
