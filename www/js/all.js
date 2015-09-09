@@ -4,6 +4,7 @@
 
     $(document).ready(function () {
         forSVG();
+<<<<<<< HEAD
 
 
         $(".categories-list .toggle dt a").click(function() {
@@ -16,6 +17,9 @@
          }); 
 
 
+=======
+        $("#menu,#menu3").metisMenu();
+>>>>>>> e80d7d4487c76057cc164e22a9496ea364e6dc13
 
         //my galleryes
         $("#lightgallery,#lightgallery2,#lightgallery3, #lightgallery4, #lightgallery5,#lightgallery6,#lightgallery7").lightGallery({
@@ -103,21 +107,21 @@
             }
         });
 
-
         $('.menu-salon1').mouseenter(function () {
-            $('.menu-hidden1').slideDown();
+            $('.menu-hidden1').slideDown("slow");
         });
 
         $('.menu-salon2').mouseenter(function () {
-            $('.menu-hidden2').slideDown();
+            $('.menu-hidden2').slideDown("slow");
         });
 
         $('.mn-sub-multi').mouseleave(function () {
-            $(this).children('ul').slideToggle();
+            $(this).children('ul').slideToggle("slow");
+
         });
 
         $('.mn-has-sub').hover(function () {
-            $('.menu-hidden1, .menu-hidden2').hide();
+            $('.menu-hidden1, .menu-hidden2').hide("slow");
         });
         $('.group-header').click(function (e) {
             var self = $(this);
@@ -127,12 +131,13 @@
 //IE:
             e.returnValue = false;
             e.cancelBubble = true;
-            self.parent('li').children('ul').slideToggle();
+            self.parent('li').children('ul').slideToggle("slow");
             self.each( function(index, val) {
-                 $('.group-header').parent('li').children('ul').not(self.parent('li').children('ul')).slideUp();
+                 $('.group-header').parent('li').children('ul').not(self.parent('li').children('ul')).slideUp("slow");
             });
             
-        });
+        }); 
+        
         
     });
 
@@ -433,7 +438,7 @@ function forSVG(){
 
             if (!($(".main-nav").hasClass("mobile-on"))) {
 
-                $(this).find(".mn-sub:first").stop(true, true).delay(100).fadeOut("fast");
+                $(this).find(".mn-sub:first").stop(true, true).delay(1500).fadeOut("fast");
             }
 
         });
