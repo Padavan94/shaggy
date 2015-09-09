@@ -7513,3 +7513,35 @@ textarea.form-control{
 .menu-hid ul>li{
     padding-left: 8px !important;
 }
+
+/*styling left slidebar*/
+
+.sidebar-nav ul a{
+    color: #111 !important;
+    padding: 10px 0 !important;
+    border: none !important;
+    text-shadow: none !important;
+    box-shadow: none !important;
+}
+.sidebar-nav {
+    background: transparent !important;
+}
+.sidebar {
+    background-color: transparent !important;
+}
+.metismenu ul li{
+    position: relative;
+    padding-left: 12px !important;
+}
+.metismenu ul li:after{
+    content: "";
+    display: block;
+    width: 4px;
+    height: 4px;
+    background-color: #111;
+    position: absolute;
+    left: 0; top: 50%;
+    margin-top: -2px;
+
+}
+

@@ -4,7 +4,6 @@
 
     $(document).ready(function () {
         forSVG();
-<<<<<<< HEAD
 
 
         $(".categories-list .toggle dt a").click(function() {
@@ -17,9 +16,9 @@
          }); 
 
 
-=======
+
         $("#menu,#menu3").metisMenu();
->>>>>>> e80d7d4487c76057cc164e22a9496ea364e6dc13
+
 
         //my galleryes
         $("#lightgallery,#lightgallery2,#lightgallery3, #lightgallery4, #lightgallery5,#lightgallery6,#lightgallery7").lightGallery({
