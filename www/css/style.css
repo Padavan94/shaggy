@@ -709,7 +709,7 @@ a.btn-mod:focus {
 
 .btn-mod.btn-border {
     color: #151515;
-    border: 2px solid #151515;
+    border: 1px solid #151515;
     background: transparent;
 }
 
@@ -722,7 +722,7 @@ a.btn-mod:focus {
 
 .btn-mod.btn-border-c {
     color: #e41919;
-    border: 2px solid #e41919;
+    border: 1px solid #e41919;
     background: transparent;
 }
 
@@ -735,7 +735,7 @@ a.btn-mod:focus {
 
 .btn-mod.btn-border-w {
     color: #fff;
-    border: 2px solid rgba(255, 255, 255, .75);
+    border: 1px solid rgba(255, 255, 255, .75);
     background: transparent;
 }
 .my-local-btn{
@@ -820,9 +820,7 @@ a.btn-mod:focus {
 }
 
 .btn-mod.btn-round {
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    border-radius: 2px;
+    
 }
 
 .btn-icon {
@@ -1645,12 +1643,12 @@ a.logo:hover {
 }
 
 .small-height {
-    height: 60px !important;
+    height: 75px !important;
 }
 
 .small-height .inner-nav ul li a {
-    height: 60px !important;
-    line-height: 60px !important;
+    height: 75px !important;
+    line-height: 75px !important;
 }
 
 .inner-nav {
@@ -2472,6 +2470,17 @@ a.logo:hover {
     box-sizing: border-box;
 
     padding: 25px 0px 25px;
+}
+.page-section{
+    text-align: justify;
+}
+.page-section h2{
+    font-size: 24px;
+    font-family: "Myriad Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    line-height: 1.4;
+    font-weight: 400;
 }
 
 .small-section {
@@ -4142,7 +4151,17 @@ a.logo:hover {
 /* ==============================
    Contact section
    ============================== */
+#contact h4{
+    margin-top: -6px;
+}
+#contact svg{
+    position: relative;
+    top: 1px;
+}
 
+#contact .cont-border{
+    padding-bottom: 0px;
+}
 .contact-item {
     position: relative;
     padding-left: 44px;
@@ -4215,6 +4234,7 @@ a.logo:hover {
 .ci-text {
     font-size: 15px;
     font-weight: 300;
+    margin-bottom: 3px;
 }
 
 /*
@@ -4425,8 +4445,9 @@ a.logo:hover {
 .slider-socials .footer-social-links a,.slider-socials .footer-social-links i {
     color: #fff;
 }
-.slider-socials .footer-social-links a:hover{
-    color: #000;
+.slider-socials .footer-social-links a:hover:before{
+    color: #111;
+    border: 1px solid #111;
 }
 .slider-socials .footer-social-links a:before{
     border-color: #fff;
@@ -5746,7 +5767,7 @@ section:hover .small-item-carousel .owl-next {
 }
 
 .toggle > dt > a:after {
-    content: "\f107";
+    content: "";
     width: 15px;
     height: 15px;
     margin-top: -8px;
@@ -5773,7 +5794,7 @@ section:hover .small-item-carousel .owl-next {
 
 .toggle > dt > a.active:after,
 .toggle > dt > a.active:hover:after {
-    content: "\f106";
+    content: "";
     color: #111;
 }
 
@@ -5783,7 +5804,7 @@ section:hover .small-item-carousel .owl-next {
 
 .toggle > dd {
     margin-bottom: 10px;
-    padding: 10px 20px 20px;
+    padding-bottom: 10px;
     font-size: 14px;
     line-height: 1.8;
     color: #777;
@@ -7051,18 +7072,33 @@ footer.page-section .footer-social-links {
     margin: 20px auto;
     padding: 10px 15px 20px 15px;
 }
+.modal-container h4{
+    text-align: center;
+}
 .my-modal-container{
-    max-width: 320px;
+    max-width: 480px;
 }
 .my-modal-container h4{
+    margin-top: 40px;
     text-align: center;
+}
+.my-modal-container h4:first-child{
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+.my-modal-container h4:last-child{
+    margin-bottom: 0px !important;
 }
 .my-modal-container h5{
     display: inline-block;
     background-color: #777;
-    padding: 5px;
+    padding: 5px 27px;
     color: #fff;
-
+    margin-top: 0;
+}
+.my-modal-container svg{
+    margin-right: 6px;
+    height: 12px;
 }
 .my-modal-container .left-phone{
     border-right: 1px solid #111;
@@ -7074,12 +7110,16 @@ footer.page-section .footer-social-links {
     text-decoration: none;
     margin-bottom: 10px;
     font-size: 16px;
+    color: #000;
 }
 .my-modal-container .left-phone a:hover,
 .my-modal-container .right-phone a:hover{
-    text-decoration: none;
-    color: #000;
-    font-weight: bold;
+    text-decoration: underline;
+
+}
+.my-modal-container .left-phone a:hover  < #lol1,
+.my-modal-container .right-phone a:hover < #lol2 {
+    background-color: #d5c2aa;
 }
 .my-modal-container i{
     margin-right: 5px;
@@ -7106,7 +7146,7 @@ footer.page-section .footer-social-links {
 
 .label-brand {
     display: block;
-    padding: 8px 15px 4px 18px;
+    padding: 8px 19px 4px 20px;
     text-align: center !important;
     letter-spacing: 0.2em;
     font-size: 9px;
@@ -7241,7 +7281,7 @@ footer.page-section .footer-social-links {
     width: 14px;
     border-radius: 50%;
     background-color: rgb(0,0,0);
-    background-image: linear-gradient(rgba(255,255,255,0.3), transparent), ;
+    /*background-image: linear-gradient(rgba(255,255,255,0.3), transparent), ;
         background-image: -o-linear-gradient(rgba(255,255,255,0.3), transparent), ;
         background-image: -ms-linear-gradient(rgba(255,255,255,0.3), transparent), ;
         background-image: -webkit-linear-gradient(rgba(255,255,255,0.3), transparent), ;
@@ -7249,7 +7289,7 @@ footer.page-section .footer-social-links {
         -o-radial-gradient(rgb(155,89,182), rgb(142,68,173));
         -ms-radial-gradient(rgb(155,89,182), rgb(142,68,173));
         -webkit-radial-gradient(rgb(155,89,182), rgb(142,68,173));
-        -moz-radial-gradient(rgb(155,89,182), rgb(142,68,173));
+        -moz-radial-gradient(rgb(155,89,182), rgb(142,68,173));*/
     background-position: top center;
     margin: 0 3.5px;
     animation: cssload-bounce 0.52s infinite ease alternate;
@@ -7364,7 +7404,7 @@ footer.page-section .footer-social-links {
 #about-intro {margin-bottom:10px;}
 #about-social {margin-bottom:25px;margin-top:25px;}
 
-.get_saloon_popup {font-size:12px;display:inline-block;background:#66CCCC;color:#FFF!important;text-decoration: none;}
+.get_saloon_popup {font-size:12px;display:inline-block;background:#d5c2aa;color:#FFF!important;text-decoration: none;}
 .get_saloon_popup:hover {color:#000!important;}
 
 .play {
@@ -7396,10 +7436,10 @@ footer.page-section .footer-social-links {
 
 .cont-border {padding:0 0 10px 0;}
 .hidden-form {display:none;}
-    .cont-border form {padding:5px 10px 15px;}
+    .cont-border form {padding:15px 10px 0px;}
         .cont-border form input {height:30px!important;}
-        .cont-border form .btn-mod {font-size:12px;background:#66CCCC;}
-.blackbutton {margin:10px 0 2px 0;font-size:12px;background:transparent;color:#111;text-transform: uppercase; text-align: center; text-decoration:none; cursor:pointer;display:inline-block; padding:5px 10px 4px;line-height:16px;border: 2px solid #111;    -webkit-transition: all 0.2s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+        .cont-border form .btn-mod {font-size:12px;background:#d5c2aa;}
+.blackbutton {margin:5px 0 21px 0;font-size:12px;background:#e5e5e5;color:#111;text-transform: uppercase; text-align: center; text-decoration:none; cursor:pointer;display:inline-block; padding:5px 10px 4px;line-height:16px;   -webkit-transition: all 0.2s cubic-bezier(0.000, 0.000, 0.580, 1.000);
     -moz-transition: all 0.2s cubic-bezier(0.000, 0.000, 0.580, 1.000);
     -o-transition: all 0.2s cubic-bezier(0.000, 0.000, 0.580, 1.000);
     -ms-transition: all 0.2s cubic-bezier(0.000, 0.000, 0.580, 1.000);
@@ -7417,12 +7457,30 @@ footer.page-section .footer-social-links {
     background-color: #111;
     text-decoration: none;
 }
+.blackbutton:hover svg g path{
+    fill: #fff !important;
+}
+.blackbutton i, .blackbutton svg{
+    margin-right: 3px;
+}
+.blc-last{
+    margin-bottom: 0px;
+}
 
 .form-control {padding:4px 12px;}
 
 .action_img {padding-left:0;}
 
-.return_back {font-size:14px;color:#FFF;background:#66CCCC;padding:5px 10px;display:block;width:100%;text-align: center; text-decoration: none;}
+.return_back {font-size:14px;color:#FFF;background:#d5c2aa;padding:5px 10px;display:block;width:100%;text-align: center; text-decoration: none;}
+.return_back svg{
+    height: 14px;
+    position: relative;
+    top: 2px;
+    left: -4px;
+}
+.return_back svg polygon{
+    fill: #fff !important;
+}
 .return_back img{margin-right: 10px; width: 23px;}
 .return_back:hover {color:#FFF;background:#000; text-decoration: none;}
 
@@ -7452,7 +7510,8 @@ footer.page-section .footer-social-links {
 
 textarea.form-control{
     height: 131px;
-    resize: none
+    resize: none;
+    text-transform: none !important;
 }
 
 /*style photos*/
@@ -7460,11 +7519,17 @@ textarea.form-control{
     text-align: center;
 }
 #lightgallery img,#lightgallery2 img,#lightgallery3 img,#lightgallery4 img,#lightgallery5 img,#lightgallery6 img,#lightgallery7 img{
-    margin: 4px;
-    width: 32%;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    width: 33%;
     display: inline-block;
 }
-
+#lightgallery a,#lightgallery2 a,#lightgallery3 a,#lightgallery4 a,#lightgallery5 a,#lightgallery6 a,#lightgallery7 a{
+    color: transparent;
+}
+#lightgallery6,#lightgallery7{
+    margin-top: 35px;
+}
 .submit_btn {
     width: 100%;
 }
@@ -7478,7 +7543,7 @@ textarea.form-control{
     width: 100% !important;
 }
 .saloon-links{
-    text-align: left;
+    text-align: center;
 }
 .saloon-links a{
     font-size: 20px !important; 
@@ -7488,9 +7553,7 @@ textarea.form-control{
     border: 1px solid rgba(255, 255, 255, .75) !important;
     background: #000 !important;
 }
-.mfp-close-btn-in .mfp-close{
-    top: 17px !important;
-}
+
 
 /*sidebar easy fix*/
 
@@ -7512,4 +7575,58 @@ textarea.form-control{
 }
 .menu-hid ul>li{
     padding-left: 8px !important;
+}
+.label{
+    border-radius: 0;
+    font-weight: normal;
+    margin-top: 12px;
+}
+#map2 .mfp-close{
+    display: none !important;
+}
+.mb-28{
+    margin-bottom: 28px !important;
+}
+.mt-64{
+    margin-top: 64px !important;
+}
+
+
+.menu-hid ul>li{
+     padding-left: 8px !important;           padding-left: 8px !important;
+ }       }
+
+/*styling left slidebar*/
+
+.sidebar-nav ul a{
+    color: #111 !important;
+    padding: 10px 0 !important;
+    border: none !important;
+    text-shadow: none !important;
+    box-shadow: none !important;
+}
+.sidebar-nav {
+    background: transparent !important;
+}
+.sidebar {
+    background-color: transparent !important;
+}
+.metismenu ul li{
+    position: relative;
+    padding-left: 12px !important;
+    text-align: left;
+}
+.metismenu ul li:after{
+    content: "";
+    display: block;
+    width: 4px;
+    height: 4px;
+    background-color: #111;
+    position: absolute;
+    left: 23px; top: 50%;
+    margin-top: -2px;
+
+}
+.w200{
+    width: 200px;
 }

@@ -5,6 +5,40 @@
     $(document).ready(function () {
         forSVG();
         $("#menu,#menu3").metisMenu();
+        /* ---------------------------------------------
+         About section
+         --------------------------------------------- */
+         $(".read-more").click(function() {
+             $(this).removeClass("active").parent().slideUp("slow");
+             $("#about-intro").css({"margin-bottom":"0px"});
+             $(".slideUp").slideDown("slow");
+
+         });
+         $(".hide-and-show").removeClass("active").click(function() {
+            $("#about-intro").css({"margin-bottom":"10px"});
+            $(".read-more").parent().slideDown("slow");
+            $(".slideUp").slideUp("slow");
+         });
+         /* ---------------------------------------------
+         Timepicker
+         --------------------------------------------- */
+         $('#timepicker').timepicki({
+            min_hour_value:10,
+            max_hour_value:20,
+            overflow_minutes:true,
+            step_size_minutes:30,
+            start_time: ["10", "00"],
+            show_meridian:false,
+         });
+         $(".timepicki-input").attr("disabled", "true");
+         /* ---------------------------------------------
+         hover
+         --------------------------------------------- */
+        $(".hover-phone").hover(function() {
+            $(this).parent().parent().find("h5").css({"background-color": "#d5c2aa"});
+        }, function() {
+            $(this).parent().parent().find("h5").css({"background-color": "#777"});
+        });
 
         //my galleryes
         $("#lightgallery,#lightgallery2,#lightgallery3, #lightgallery4, #lightgallery5,#lightgallery6,#lightgallery7").lightGallery({
@@ -54,8 +88,8 @@
                     marker10 = new google.maps.Marker({
                         map: map2,
                         title: 'Шагги Стиль',
-                        icon: new google.maps.MarkerImage('/images/logo-loc.svg',
-                        null, null, null, new google.maps.Size(100,100)),
+                        icon: new google.maps.MarkerImage('/images/s_style.svg',
+                        null, null, null, new google.maps.Size(77,100)),
                         draggable: false,
                         position: new google.maps.LatLng(46.478452, 30.743917),
                         animation: google.maps.Animation.DROP
@@ -80,8 +114,8 @@
                     marker20 = new google.maps.Marker({
                         map: map3,
                         title: 'Шагги Тайм',
-                        icon: new google.maps.MarkerImage('/images/logo-loc.svg',
-                        null, null, null, new google.maps.Size(100,100)),
+                        icon: new google.maps.MarkerImage('/images/s_time.svg',
+                        null, null, null, new google.maps.Size(77,100)),
                         draggable: false,
                         position: new google.maps.LatLng(46.468953, 30.746616),
                         animation: google.maps.Animation.DROP
@@ -108,20 +142,25 @@
         $('.mn-has-sub').hover(function () {
             $('.menu-hidden1, .menu-hidden2').hide("slow");
         });
-        $('.group-header').click(function (e) {
+        
+        $('.group-header').hover(function(e) {
             var self = $(this);
-
             e.preventDefault();
             e.stopPropagation();
-//IE:
             e.returnValue = false;
             e.cancelBubble = true;
-            self.parent('li').children('ul').slideToggle("slow");
-            self.each( function(index, val) {
-                 $('.group-header').parent('li').children('ul').not(self.parent('li').children('ul')).slideUp("slow");
-            });
+            if(self.hasClass("hasSub")){
+                self.parent('li').children('ul').delay(200).slideDown("slow");
+                self.each( function(index, val) {
+                 $('.group-header').parent('li').children('ul').not(self.parent('li').children('ul')).delay(200).slideUp("slow");
+                });
+            }else{
+
+            }
             
-        }); 
+        }, function() {
+            
+        });
         
         
     });
@@ -424,6 +463,7 @@ function forSVG(){
             if (!($(".main-nav").hasClass("mobile-on"))) {
 
                 $(this).find(".mn-sub:first").stop(true, true).delay(1500).fadeOut("fast");
+                $(".mn-sub li ul").slideUp("slow");
             }
 
         });
@@ -1251,7 +1291,9 @@ function init_masonry() {
 }
 
 /* ---------------------------------------------
- fix toogle nav
+ hide select
  --------------------------------------------- */
-
+$("#my-select").click(function() {
+    $(this).find("option:first-child").hide(100);
+});
  
