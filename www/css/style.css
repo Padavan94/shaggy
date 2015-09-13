@@ -7471,6 +7471,7 @@ footer.page-section .footer-social-links {
 
 .action_img {padding-left:0;}
 
+<<<<<<< HEAD
 .return_back {font-size:14px;color:#FFF;background:#d5c2aa;padding:5px 10px;display:block;width:100%;text-align: center; text-decoration: none;}
 .return_back svg{
     height: 14px;
@@ -7482,6 +7483,10 @@ footer.page-section .footer-social-links {
     fill: #fff !important;
 }
 .return_back img{margin-right: 10px; width: 23px;}
+=======
+.return_back {font-size:14px;color:#FFF;background:#66CCCC;padding:5px 10px;display:block;width:100%;text-align: center; text-decoration: none;}
+.return_back img{margin-right: 10px; width: 20px;}
+>>>>>>> 7654e4b001282d9e18c33f8c31487ef7e5b06429
 .return_back:hover {color:#FFF;background:#000; text-decoration: none;}
 
 .post-action-index {color:#FFF;text-transform: uppercase; font-size:14px;text-align: center;}
@@ -7576,6 +7581,7 @@ textarea.form-control{
 .menu-hid ul>li{
     padding-left: 8px !important;
 }
+<<<<<<< HEAD
 .label{
     border-radius: 0;
     font-weight: normal;
@@ -7595,6 +7601,8 @@ textarea.form-control{
 .menu-hid ul>li{
      padding-left: 8px !important;           padding-left: 8px !important;
  }       }
+=======
+>>>>>>> 7654e4b001282d9e18c33f8c31487ef7e5b06429
 
 /*styling left slidebar*/
 
@@ -7614,7 +7622,10 @@ textarea.form-control{
 .metismenu ul li{
     position: relative;
     padding-left: 12px !important;
+<<<<<<< HEAD
     text-align: left;
+=======
+>>>>>>> 7654e4b001282d9e18c33f8c31487ef7e5b06429
 }
 .metismenu ul li:after{
     content: "";
@@ -7623,6 +7634,7 @@ textarea.form-control{
     height: 4px;
     background-color: #111;
     position: absolute;
+<<<<<<< HEAD
     left: 23px; top: 50%;
     margin-top: -2px;
 
@@ -7630,3 +7642,10 @@ textarea.form-control{
 .w200{
     width: 200px;
 }
+=======
+    left: 0; top: 50%;
+    margin-top: -2px;
+
+}
+
+>>>>>>> 7654e4b001282d9e18c33f8c31487ef7e5b06429

@@ -4,6 +4,19 @@
 
     $(document).ready(function () {
         forSVG();
+
+
+        $(".categories-list .toggle dt a").click(function() {
+            var self = $(this);
+            $(".categories-list .toggle dd ul").each( function(index, val) {
+            var self2 =  $(this).not(self.parent().parent().find("dd ul")); 
+            self2.slideUp("slow");
+                
+            });
+         }); 
+
+
+
         $("#menu,#menu3").metisMenu();
         /* ---------------------------------------------
          About section
@@ -40,10 +53,11 @@
             $(this).parent().parent().find("h5").css({"background-color": "#777"});
         });
 
+
         //my galleryes
         $("#lightgallery,#lightgallery2,#lightgallery3, #lightgallery4, #lightgallery5,#lightgallery6,#lightgallery7").lightGallery({
             download: false,
-             animateThumb: false
+            animateThumb: false
         });
         
          //end galleryes
